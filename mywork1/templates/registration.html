@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="{% static 'css/c3.css '%}">
+</head>
+<!-- <style>
+   
+</style> -->
+
+    
+   
+<body>
+    <center>
+        
+        <div class="one">
+            
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h1 style="color: white;">Sign In</h1>
+                <div class="inputs">
+                <input type="email" name="email" placeholder="Email address" required/><br>
+                <input type="text" name="username" placeholder="Username" required/><br>
+                <input type="password" name="password" placeholder="Password" required/><br>
+                <input type="password" name="password2" placeholder="Repeat Password" required/><br></div>
+                <button style="color:white" type="submit" class="signup-btn">Sign In ></button><br>
+                <span id="Fis">Remember me</span><span id="Sec">Need help?</span>
+            </form>
+            <div class="rem">
+            <span>Don't you have an account?</span>
+                <a href="{% url 'login' %}" class="nav-link">Login</a></div>
+                
+				<!-- <div class="lion">
+					<a href=""><i class="fa-brands fa-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+					<a href=""><i class="fa-brands fa-google"></i></a>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<iframe width="5" height="5" src="https://www.youtube.com/embed/wbkfuO0havc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div> -->
+
+
+
+
+            
+        </form>
+    </div>
+</center>
+</body>
+</html>

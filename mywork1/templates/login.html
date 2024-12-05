@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/c4.css '%}">
+</head>
+<body>
+    <center>
+        <div class="two">
+    <form method="POST">
+        {% csrf_token %}
+        <h1 style="color: white;"> Login </h1>
+        <div class="inputs">
+        <input type="text" name="un" id="un" placeholder="Username">
+        <br>
+        <input type="password" id="pw" name="pw" placeholder="Password"></div>
+        <button style="color:white" class="btn btn-primary">Login</button>
+    </form>
+    <div class="rem">
+    <span>Don't you have an account?</span>
+                <a href="{% url 'registration' %}" class="nav-link">Sign In</a></div>
+</div>
+</center>
+</body>
+</html>

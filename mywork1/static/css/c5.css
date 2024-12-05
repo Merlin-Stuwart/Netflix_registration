@@ -1,0 +1,14 @@
+body{
+    background-image: url(../images/netlix_home3.png);
+    background-size:cover;
+}
+.nav-link{  
+    border-radius: 5px;
+    text-decoration: none;
+    border:1px solid black;
+    font-size: 20px;
+    margin-left: 1400px;
+    background: rgba(188, 4, 4, 0.838);
+    color: white;
+    padding: 5px 10px;
+}
